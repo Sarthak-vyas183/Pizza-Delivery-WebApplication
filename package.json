@@ -1,16 +1,19 @@
 {
-  "name": "pizza-delivery-webapplication",
-  "version": "1.0.0",
-  "description": "The user management services",
-  "main": "index.js",
-  "scripts": {
-    "dev": "node src/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Sarthak <vyassarthak183@gmail.com>",
-  "license": "ISC",
-  "devDependencies": {
-    "@types/node": "^22.9.0",
-    "typescript": "^5.6.3"
-  }
+    "name": "pizza-delivery-webapplication",
+    "version": "1.0.0",
+    "description": "The user management services",
+    "main": "index.js",
+    "scripts": {
+        "dev": "node src/server.js",
+        "formate:fix": "prettier . --write",
+        "formate:check": "prettier . --check",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Sarthak <vyassarthak183@gmail.com>",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/node": "^22.9.0",
+        "prettier": "3.3.3",
+        "typescript": "^5.6.3"
+    }
 }
