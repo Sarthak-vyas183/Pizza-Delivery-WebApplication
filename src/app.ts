@@ -7,7 +7,7 @@ const app = express()
 app.get("/", (req, res) => {
     // const err = createHttpError(401, "you can not access error");
     // throw err;
-    res.send("welcome to pizza hub");
+    res.status(201).send("welcome to pizza hub");
 })
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
