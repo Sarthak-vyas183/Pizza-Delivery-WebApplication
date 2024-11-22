@@ -12,7 +12,6 @@ describe("App", () => {
     })
 
     it("should retrun 200 status code", async () => {
-       // eslint-disable-next-line @typescript-eslint/no-misused-promises
        const response = await request(app).get("/").send();
        expect(response.statusCode).toBe(201);
     })
