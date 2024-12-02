@@ -2,6 +2,7 @@ import logger from "./logger";
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import createHttpError, { HttpError } from "http-errors";
 import express, { Request, Response, NextFunction } from "express";
+import authRouter from "./routes/auth";
 const app = express()
 
 app.get("/", (req, res) => {
@@ -9,6 +10,8 @@ app.get("/", (req, res) => {
     // throw err;
     res.status(201).send("welcome to pizza hub");
 })
+
+app.use("/auth", authRouter);
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 app.use((err : HttpError, req : Request, res : Response, next : NextFunction)=>{

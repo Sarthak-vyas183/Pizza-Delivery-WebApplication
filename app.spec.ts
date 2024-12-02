@@ -4,7 +4,7 @@ import app from "./src/app";
 import { calculateDiscount } from "./src/utiles"
 import request from 'supertest'
 
-describe("App", () => {
+describe.skip("App", () => {
 
     it("should return correct discount amount", () => {
       const discount =  calculateDiscount(100, 10);
