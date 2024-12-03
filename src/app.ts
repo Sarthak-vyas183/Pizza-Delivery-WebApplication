@@ -1,4 +1,6 @@
 import logger from "./logger";
+import "reflect-metadata";
+
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import createHttpError, { HttpError } from "http-errors";
 import express, { Request, Response, NextFunction } from "express";
